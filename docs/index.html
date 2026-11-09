@@ -262,7 +262,7 @@ th{background:transparent;font-size:12.5px;font-weight:600;color:var(--muted);bo
 <p class="eyebrow"><span class="badge">CPBench</span> · AI agents handling alarms on a simulated production line</p>
 <p id="release" class="eyebrow">v1.0 · November 2026 · GitHub repo: coming soon</p>
 <h1 id="question">How do mainstream AI agents perform on fault triage in a real production line?</h1>
-<p class="why">Before an AI agent can be trusted with a stopped line, it has to tell a real fault from a lying sensor and clear the alarm without an unsafe action; this page measures that for six off-the-shelf agents on alarm codes tested on a real assembly line.</p>
+<p class="why">Before an AI agent can be trusted with a stopped line, it has to tell a real fault from a lying sensor and clear the alarm without an unsafe action; this page measures that for six off-the-shelf agents on alarm codes tested on a real assembly line. All agent runs reported below are simulated.</p>
 <p id="answer"></p>
 <p class="lede">Each agent is an off-the-shelf agent harness with a base model, connected to the simulated line through the same tools. An alarm can mean a <span class="term" tabindex="0" data-tip="The sensor reports correctly and something physical is wrong, e.g. a pallet is missing. Handled correctly = the agent has the part fixed, then presses Repeat.">real fault</span>
 or a <span class="term" tabindex="0" data-tip="The part is fine, but a sensor reports a problem (for example a dirty or misaligned sensor). Handled correctly = press Ignore as a temporary measure and report that sensor for repair.">sensor false alarm</span>; the agent has to find out which and end it the right way.</p>
